@@ -7,7 +7,7 @@ export default function Catalog() {
   const baseUrl = import.meta.env.VITE_API_URL
 
   useEffect(() => {
-    axios.get(\`\${baseUrl}/catalog\`).then(res => {
+    axios.get(`${baseUrl}/catalog`).then(res => {
       setProducts(res.data)
     }).catch(() => {
       setProducts([])
