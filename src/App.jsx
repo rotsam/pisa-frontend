@@ -3,8 +3,6 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import Admin from './pages/Admin'
 import Catalog from './pages/Catalog'
-from routes_auth import router as auth_router
-app.include_router(auth_router)
 export default function App() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-6">
